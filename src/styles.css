@@ -8,7 +8,7 @@
 }
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
+  padding: 0 0 30px 0;
 }
 
 .search-input {
@@ -16,7 +16,7 @@ header {
   border: none;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
-  padding: 20px;
+  padding: 15px 20px;
   width: 75%;
   border-radius: 6px;
 }
@@ -27,8 +27,7 @@ header {
   background-color: #885df1;
   color: white;
   border: none;
-  padding: 20px;
-  line-height: 1;
+  padding: 15px 30px;
   border-radius: 5px;
 }
 
@@ -36,53 +35,51 @@ main {
   padding: 30px 0;
 }
 
-.current-temperature {
-  font-size: 48px;
+.weather-temperature-container {
+  display: flex;
 }
 
-.current-weather {
+.weather-app-data {
   display: flex;
   justify-content: space-between;
 }
 
-.current-city {
+.weather-app-city {
   font-size: 38px;
-  font-weight: 900;
+  line-height: 48px;
   margin: 0;
 }
-.current-details {
+.weather-app-details {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.current-details strong {
+.weather-app-details strong {
   color: #f65282;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+.weather-app-icon {
+  height: 88px;
+  width: 88px;
 }
 
-.current-temperature-value {
-  font-size: 80px;
+.weather-app-temperature {
+  font-size: 88px;
   font-weight: bold;
+  line-height: 88px;
 }
 
-.current-temperature-unit {
+.weather-app-temperature-unit {
   font-size: 28px;
-  position: relative;
-  top: -38px;
+  margin-top: 6px;
 }
 
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 30px;
 
   color: rgba(39, 33, 66, 0.4);
 }
@@ -102,17 +99,16 @@ a {
   text-decoration: none;
 }
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #0000;
+  margin-top: 30px;
   display: flex;
   justify-content: space-around;
 }
 .weather-forecast-date {
   font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  opacity: 0.5;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: rgb(39, 33, 66, 0.4);
 }
 .weather-forecast-icon {
   width: 88px;
