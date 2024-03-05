@@ -105,12 +105,20 @@ a {
   margin-top: 20px;
   text-align: center;
   color: #0000;
+  display: flex;
+  justify-content: space-around;
 }
 .weather-forecast-date {
   font-size: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   opacity: 0.5;
+}
+.weather-forecast-icon {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
